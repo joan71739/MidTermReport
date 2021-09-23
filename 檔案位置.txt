@@ -1,0 +1,5 @@
+此專案使用servlet及JDBC所製作
+
+\midTermReport2_fullVerson\src\main\java\dao
+
+\midTermReport2_fullVerson\src\main\java\servlet

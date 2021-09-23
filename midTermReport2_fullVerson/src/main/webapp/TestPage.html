@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TestPage</title>
+</head>
+<body>
+  <h1>TestPgage</h1>
+  <select name="" id="sel">
+    <option value="member">一般會員申請</option>
+    <option value="memberVendor">企業會員申請</option>
+  </select>
+  <input type="text" id="a1" name="type" value="form-a" />
+  <input type="text" id="a2" name="type" value="form-a" />
+  <input type="hidden" id="b1" name="type" value="form-b" />
+  <input type="hidden" id="b2" name="type" value="form-b" />
+  <input type="hidden" id="b3" name="type" value="form-b" />
+  <input type="text" id="aa" name="type" value="form-b" />
+  <div>
+    <label id="principal1" for="principal2"  style ="display:none">負責人：</label>
+    <input type="hidden" id="b4" name="type" value="form-ggg" />
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("sel").addEventListener("change",ss);
+      });
+      function ss(){
+      let se=document.getElementById("sel").value
+        console.log(event.target.value);
+        console.log(se)
+        if(se=="member"){
+          for(let i = 1;i<3;i++){
+             document.getElementById("a"+i).type="text"
+          }
+          for(let j=1;j<4;j++){
+            document.getElementById("b"+j).type="hidden"
+          }
+          document.getElementById("aa").value="form-d"
+          document.getElementById("principal1").style="display:none"
+        }
+        if(se=="memberVendor"){
+          for(let i = 1;i<3;i++){
+             document.getElementById("a"+i).type="hidden"
+          }
+          for(let j=1;j<5;j++){
+            document.getElementById("b"+j).type="text"
+          }
+          document.getElementById("aa").value="form-c"
+          document.getElementById("principal1").style=""
+        }
+      }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+/*共同樣式*/
+
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    line-height: 1.5em;
+    
+}
+
+header {
+    background: cadetblue;
+    color:black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 90%;
+    margin:auto;
+    padding:10px;
+    text-align: center;
+}
+
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 30px 50px;
+    
+    }
+
+.title:hover{
+    color: chartreuse;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    margin: 20px 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+	margin:40px 50px
+	
+    
+}
+
+.btnlo{
+	height: 500px;
+	width: 200px;
+	float:left
+}
+
+
+
+
+
+/*Hw2 樣式*/
+.form {
+    width: 450px;
+    border-bottom: 3px dashed rgb(206, 201, 201);
+    margin: 20px ;
+    padding-bottom: 12px;
+    
+
+
+}
+
+.sub {
+    width: 450px;
+    margin: 20px;
+    text-align: center;
+}
+
+.formt1 {
+    width: 100px;
+    float: left;
+    text-align: right;
+}
+
+.p1 {
+    font-size: 10px;
+    color: grey;
+    clear: both;
+    margin: 10px 0 0 50px;
+}
+
+
+fieldset {
+    width: 500px;
+    border: 5px double palevioletred;
+    border-radius: 10px;
+    margin: 10px auto;;
+}
+
+legend {
+    color: rgb(37, 35, 35);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    margin-left: 25px;
+
+
+
+}
+
+
+input{
+    height: 25px;
+    font-size: 20px;
+}
+
+textarea{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>midTermReport2_fullVerson</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 2021/7/13 冠維 first 加入 -->
+  <!-- 2021/7/13 冠維 加入 res-sharing-scope by 秉睿專案 -->
+  <resource-ref>
+    <description>MS SQL Server DataSource Example</description>
+    <res-ref-name>jdbc/EmployeeDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+    <res-sharing-scope>Shareable</res-sharing-scope>
+  </resource-ref>
+
+  <servlet>
+  	<display-name>ManageActivityServlet</display-name>
+  	<servlet-name>ManageActivityServlet</servlet-name>
+  	<servlet-class>activity.ManageActivityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ManageActivityServlet</servlet-name>
+  	<url-pattern>/ManageActivityServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<display-name>SaveActiveServlet</display-name>
+  	<servlet-name>SaveActiveServlet</servlet-name>
+  	<servlet-class>activity.SaveActiveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SaveActiveServlet</servlet-name>
+  	<url-pattern>/SaveActiveServlet</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+  	<display-name>activityDetailServlet</display-name>
+  	<servlet-name>activityDetailServlet</servlet-name>
+  	<servlet-class>activity.activityDetailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>activityDetailServlet</servlet-name>
+  	<url-pattern>/activityDetailServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<display-name>updateActivityServlet</display-name>
+  	<servlet-name>updateActivityServlet</servlet-name>
+  	<servlet-class>activity.updateActivityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateActivityServlet</servlet-name>
+  	<url-pattern>/updateActivityServlet</url-pattern>
+  </servlet-mapping>  
+ 
+  
+</web-app>

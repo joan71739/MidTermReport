@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+/* 英文 */
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+/* 日文 */
+/* 超連結 */
+a{
+    text-decoration:none;
+    color: black;
+}
+a:visited{
+    color: grey;
+}
+/* 組別css */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 10;
+}
+header .header_top{
+    position: relative;
+    height:80px;
+    background-color: rgb(31, 131, 31);
+    z-index: 10; /* 必須要有 position: relative; 才會生效 */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .2);
+}
+header .selectButton{
+    height:60px;
+    width:60px;
+    padding: 10px;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+header .selectButton img{
+    float: left;
+    height: 100%;
+}
+header .selectButton img:hover{
+    -webkit-filter:invert(1);
+}
+header .headerButton{
+    display: block;
+    height:30px;
+    margin: 25px 40px 25px 0;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    transition: color .3s;
+    float: right;
+    cursor: pointer;
+    text-decoration: none;
+}
+header .signUp{
+    border-left: 3px solid #fff;
+    padding-left: 40px;
+}
+header .headerButton:hover{
+    color: rgb(255, 255, 64);
+}
+
+header .headerButton.shopCar{
+    background-color: rgb(151, 255, 151);
+    border-radius: 3px;
+    height:26px;
+    margin: 15px 40px 15px 0;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 12px 18px;
+    color: rgb(23, 102, 23);
+}
+header .headerButton.shopCar:hover{
+    background-color: rgba(151, 255, 151, 0.863);
+}
+
+header .header_select{
+    position: absolute;
+    width: 100%;
+    top:80px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9;
+    top: -250px;
+    transition: top 1s;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+}
+header .header_select.show{
+    top: 80px;
+}
+header .header_select li{          
+    border-bottom: 1px solid rgb(31, 131, 31);
+    background-color: rgb(175, 255, 175);
+}
+header .header_select li a{
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+header .header_select li a:hover{
+    background-color: rgb(124, 250, 124);
+}
+
+.container{
+    height:80vh; /* 待修正 */
+    margin-top: 80px; 
+    padding: 50px 0;
+    width: 100%;
+    background-color: rgb(248, 255, 182);
+}
+/* 輸入框 */
+.div_mid{
+    border: 3px solid #D3A4FF;
+    border-radius: 5px;
+    margin: 0 530px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0px 3px 3px grey;
+}
+/* 按鈕(確認) */
+.div_mid_but{
+    text-align:right;
+}
+.but1 {
+    border: 0;
+    background-color: #628bce;
+    color: #fff;
+    font-family: 'Kosugi Maru', sans-serif;
+    /* 日文 */
+    border-radius: 3px
+}
+
+.but1:hover {
+    color: #628bce;
+    background-color: #fff;
+    border: 0px #003C9D solid;
+    font-family: 'Kosugi Maru', sans-serif;
+    /* 日文 */
+}
+/* 底 */
+.footdiv {
+    font-family: 'Yellowtail', cursive;
+    /* 英文 */
+    color: aliceblue;
+    font-size: 10px;
+    bottom: 0px;
+    right: 30px;
+}
+
+.footer{
+    background-color: rgb(3, 26, 102);
+}
+.footer .copyRight{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.clearFloat{
+    clear:both
+}
